@@ -1,0 +1,4 @@
+*.o
+slock
+config.h
+patches.h
