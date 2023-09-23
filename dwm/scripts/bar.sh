@@ -6,7 +6,7 @@
 interval=0
 
 # load colors
-. /home/rhino/.config/suckless/dwm/scripts/bar_themes/dracula
+. /home/rhino/.config/Suckless/dwm/scripts/bar_themes/dracula
 
 cpu() {
    cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)

@@ -1,5 +1,5 @@
 #!/usr/bin/sh
-/home/rhino/.config/suckless/dwm/scripts/bar.sh &
+/home/rhino/.config/Suckless/dwm/scripts/bar.sh &
 setbg &
 xrdb merge /home/rhino/.config/x11/xresources &
 xset r rate 350 50 &
