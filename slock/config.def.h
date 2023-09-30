@@ -33,7 +33,7 @@ static const char * font_name = "6x10";
 
 #if BACKGROUND_IMAGE_PATCH
 /* Background image path, should be available to the user above */
-static const char * background_image = "/home/rhino/.local/share/bg/black-01.png";
+static const char * background_image = "/home/rhino/.local/share/bg/IMG_7760.JPG";
 #endif // BACKGROUND_IMAGE_PATCH
 
 #if DWM_LOGO_PATCH
