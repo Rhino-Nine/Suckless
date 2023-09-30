@@ -210,20 +210,29 @@ static const Key keys[] = {
     {MODKEY | ShiftMask, XK_s, spawn, SHCMD("flameshot full -d 1000 &")},
 
     // ncmpcpp & mpv
-    {MODKEY, XK_m, spawn, SHCMD("st -e ncmpcpp &")},
+    {MODKEY, XK_m, spawn, SHCMD("rofi-mpc &")},
+    
     {ControlMask, XK_bracketleft, spawn, SHCMD("mpc prev")},
     {ControlMask, XK_bracketright, spawn, SHCMD("mpc next")},
+    
     {ControlMask, XK_p, spawn, SHCMD("mpc toggle")},
     {ShiftMask | ControlMask, XK_p, spawn, SHCMD("mpc pause && pauseallmpv")},
+    
     {ControlMask, XK_backslash, spawn, SHCMD("mpc repeat")},
     {MODKEY, XK_backslash, spawn,
      SHCMD("mpv --untimed --no-cache --no-osc --no-input-default-bindings "
            "--profile=low-latency --input-conf=/dev/null --title=webcam $(ls "
            "/dev/video[0,2,4,6,8] | tail -n 1)")},
+   
     {ControlMask, XK_comma, spawn, SHCMD("mpc seek -20")},
     {ShiftMask | ControlMask, XK_comma, spawn, SHCMD("mpc seek -60")},
+    
     {ControlMask, XK_period, spawn, SHCMD("mpc seek +20")},
     {ShiftMask | ControlMask, XK_period, spawn, SHCMD("mpc seek +60")},
+
+    // NetworkManager
+    {MODKEY | ShiftMask, XK_m, spawn, SHCMD("rofi-wifi-menu &")},
+    
 
     // toggle stuff
     {MODKEY, XK_b, togglebar, {0}},
